@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang ="es">
+
+    <head>
+        <meta charset = "UTF-8" />
+        <title> Configuracion</title>
+        <link rel = "stylesheet" href = "css/style.css">
+    </head>
+
+    <body>
+
+        <header> 
+            <section id = "inicio">
+                <h1> Configuracion </h1>
+                <p class = "subtitle"> Configuracion de perfiles</p>
+            </section>
+        </header>
+
+        <nav>
+            <div> 
+                <ul>
+                    <li> <a href = "index.html">Inicio</a> </li>
+                    <li> <a href = "index.html#noticias">Noticias</a> </li>
+                    <li> <a href = "#blog">Blog</a> </li>
+                    <li> <a href = "contacto.html">Contacto</a> </li>
+                    <li> <a href = "configuracion.html">Configuracion</a> </li>
+                    <li> <a href = "index.html#sobre mi">Sobre mi</a> </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main> 
+            <section class = "contactobox" id = "formulario">
+                <h2> Formularios </h2>
+
+                <form action = "#" method = "post">
+                    <fieldset>
+                        <legend> Configuracion de perfil </legend>
+
+                        <label for = "imagen" class = "label"> Imagen de perfil: </label>
+                        <br>
+                        <input type = "file" id = "imagen" name = "imagen" accept=".jpg,.png,.jpeg"> <br> <br>
+
+                        <label for = "fecha" class = "label"> Fecha de nacimiento: </label>
+                        <br>
+                        <input class = "select" type = "date" id = "fecha" name = "fecha"> <br> <br>
+
+                        <label class = "label"> Genero: </label>
+                        <br>
+                        <label> <input type = "radio" name = "genero" value = "hombre" class = "label"> Hombre </label>
+                        <label> <input type = "radio" name = "genero" value = "mujer" class = "label"> Mujer </label>
+                        <label> <input type = "radio" name = "genero" value = "otro" class = "label"> Otro </label> <br> <br>
+
+                        <label for = "color" class = "label"> Color favorito: </label>
+                        <br>
+                        <input class = "select" type = "color" id = "color" name = "color" value = "#ff0000">
+
+                    </fieldset>
+
+                    <hr>
+
+                    <fieldset>
+                        <legend> Cambiar clave </legend>
+
+                        <label for = "nombre" class = "label"> Nombre de usuario: </label> 
+                        <br>
+                        <input class = "select" type = "text" id = "nombre" name = "nombre" placeholder="Ej: Ramses Gonzalez" required>
+                        <br>
+
+                        <label for = "old" class = "label"> Antigua contraseña: </label>
+                        <br>
+                        <input class = "select" type = "password" id = "old" name = "old" minlength="8" required>
+                        <br>
+
+                        <label for = "new" class = "label"> Nueva contraseña: </label>
+                        <br>
+                        <input class = "select" type = "password" id = "new" name = "new" minlength="8" required>
+                    </fieldset>
+
+                    <div style = "margin-top: 20px;"> 
+                        <button class = "enviar" type = "submit"> Enviar </button> 
+
+                    </div>
+                </form>
+            </section>
+
+            <section class = "contactobox" id = "tablas"> 
+                <h2>Tablas</h2>
+                <div class = "tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class = "bottom">Imagen de perfil </th>
+                            <th>Correo </th>
+                            <th>Nombre </th>
+                            <th>Apellido </th>
+                            <th>Cedula </th>
+                            <th>Fecha de nacimiento </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class = "tableimg"> <img src = "img\Mario.jpg" alt = "Imagen de ejemplo" width = "100"> </td>
+                            <td>supermarioodyssey@gmail.com </td>
+                            <td>Mario </td>
+                            <td>Mario </td>
+                            <td>19.850.000 </td>
+                            <td>27/ 10/ 2017</td>
+                        </tr>
+                        <tr class = "secondimg">
+                            <td class = "tableimg"> <img src = "img\Donkey Kong.jpg" alt = "Imagen de ejemplo" width = "100"> </td>
+                            <td>donkeykongbananza@gmail.com</td>
+                            <td>Donkey</td>
+                            <td>Kong</td>
+                            <td>19.940.000</td>
+                            <td>17/ 07/ 2025</td>
+                        </tr>
+                        <tr>
+                            <td class = "tableimg"> <img src = "img\Link.jpg" alt = "Imagen de ejemplo" width = "100"> </td>
+                            <td>breathofthewild@gmail.com</td>
+                            <td>Link</td>
+                            <td>-</td>
+                            <td>19.860.000</td>
+                            <td>03/ 03/ 2017</td>
+                        </tr>
+                        <tr class = "secondimg">
+                            <td class = "tableimg"> <img src = "img\Samus Aran.jpg" alt = "Imagen de ejemplo" width = "100"> </td>
+                            <td>metroiddread@gmail.com</td>
+                            <td>Samus</td>
+                            <td>Aran</td>
+                            <td>19.861.000</td>
+                            <td>08/ 10/ 2021</td>
+                        </tr>
+                        <tr>
+                            <td class = "tableimg"> <img src = "img\Yoshi.jpg" alt = "Imagen de ejemplo" width = "100"> </td>
+                            <td>craftedworld@gmail.com</td>
+                            <td>Yoshi</td>
+                            <td>-</td>
+                            <td>19.950.000</td>
+                            <td>29/ 03/ 2019</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+            </section>
+
+            <footer>
+                <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+                <address>
+                    Contacto: <a href="rcgonzalez.24@est.ucab.edu.ve">Correo de la UCAB</a>
+                </address>
+            </footer>
+
+            <button class = "chat"> Chat </button>
+
+        </main>
+
+    </body>
+
+</html>
