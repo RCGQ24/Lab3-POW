@@ -73,4 +73,11 @@ Ramses, estudiante de ingeniería informática en la Universidad Católica Andr�
 - **JavaScript modular:**  
   Toda la lógica de formularios y componentes interactivos se centraliza en un solo archivo JS, facilitando el mantenimiento y la reutilización.
 
-- **Documentación:**  o una licencia de uso personal. © 2025 Mi Revista Digital. Todos los derechos reservados.  El archivo `README.md` en la carpeta `docs` documenta la estructura, requisitos y decisiones del proyecto para facilitar su comprensión y futuras mejoras.---## Requisitos técnicosPara visualizar correctamente este proyecto, necesitarás:1. Un navegador web moderno que soporte HTML5, CSS3 y archivos multimedia.2. Un servidor local o software que permita abrir archivos HTML si deseas probar las funcionalidades en un entorno local.## AutorRamses, estudiante de ingeniería informática en la Universidad Católica Andrés Bello (UCAB).## LicenciaEste proyecto está bajo una licencia de uso personal. © 2025 Mi Revista Digital. Todos los derechos reservados.
+- **Documentación:**  
+  El archivo `README.md` en la carpeta `docs` documenta la estructura, requisitos y decisiones del proyecto para facilitar su comprensión y futuras mejoras.
+
+## Autor 
+  Ramses, estudiante de ingeniería informática en la Universidad Católica Andrés Bello (UCAB).
+
+## Licencia
+  Este proyecto está bajo una licencia de uso personal. © 2025 Mi Revista Digital. Todos los derechos reservados.
