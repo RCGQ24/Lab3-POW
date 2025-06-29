@@ -1,53 +1,76 @@
-# Mi Revista Digital
+# Documentación interna de Mi Revista Digital
 
-Este proyecto consiste en el desarrollo de una página web sencilla que presenta una revista digital sobre diversos temas. La página incluye diferentes secciones y características multimedia para ofrecer una experiencia interactiva al usuario.
-
-## Características principales
-
-- **Página principal**: Encabezado con el título "Mi Revista Digital" y un breve párrafo introductorio.
-- **Menú de navegación**: Lista de enlaces que permite navegar entre las diferentes secciones de la página.
-- **Sección de Noticias**: Artículos destacados sobre temas actuales, como el lanzamiento de la Nintendo Switch 2 y el nuevo tráiler de Superman.
-  - Contiene imágenes, videos y audio relacionados con los artículos.
-- **Sección de Temas Populares**: Lista ordenada con los temas más relevantes.
-- **Sección Sobre Mí**: Un breve apartado sobre el creador de la página.
-- **Glosario**: Definiciones de términos como "API" y "SEO" para ayudar a los usuarios a comprender conceptos técnicos.
-- **Página de Contacto**: 
-  - Formulario para que los usuarios puedan enviar mensajes. 
-  - Campos incluidos: nombre, correo electrónico, tema del mensaje y mensaje.
-- **Página de Configuración**: 
-  - **Formulario de configuración de perfil**: Los usuarios pueden cargar una imagen de perfil, seleccionar su fecha de nacimiento, género y color favorito.
-  - **Cambio de contraseña**: Sección que permite actualizar la contraseña ingresando la anterior y la nueva.
-  - **Tablas interactivas**: Tabla que muestra información de ejemplo sobre distintos perfiles con datos como imagen, correo, nombre y fecha de nacimiento.
+Este archivo documenta la **estructura de carpetas** y las **decisiones técnicas clave** del proyecto.
 
 ## Estructura del proyecto
 
-El proyecto está organizado en los siguientes archivos y directorios:
+El proyecto está organizado de la siguiente manera para separar responsabilidades y facilitar el mantenimiento:
 
-📁 **MiRevistaDigital**  
-├── 📄 **index.html** - Página principal del sitio  
-├── 📄 **contacto.html** - Página de contacto  
-├── 📄 **configuracion.html** - Página de configuración  
-├── 📂 **img** - Carpeta con imágenes y archivos multimedia  
-│   ├── Nintendo Switch 2.jpg  
-│   ├── Superman.jpg  
-│   ├── Mario.jpg  
-│   ├── Donkey Kong.jpg  
-│   ├── Link.jpg  
-│   ├── Samus Aran.jpg  
-│   ├── Yoshi.jpg  
-│   ├── 117. Gusty Garden Galaxy.mp3  
-│   └── Nintendo Switch 2 – First-look trailer.mp4  
+```
+📁 Lab3-POW
+│
+├── index.html                  # Página principal del sitio
+├── views/
+│   ├── contact/
+│   │   └── contacto.html       # Página de contacto
+│   ├── config/
+│   │   └── configuracion.html  # Página de configuración
+│
+├── assets/
+│   └── img/                    # Imágenes, audios y videos usados en el sitio
+│       ├── Nintendo Switch 2.jpg
+│       ├── Superman.jpg
+│       ├── Mario.jpg
+│       ├── Donkey Kong.jpg
+│       ├── Link.jpg
+│       ├── Samus Aran.jpg
+│       ├── Yoshi.jpg
+│       ├── 117. Gusty Garden Galaxy.mp3
+│       └── Nintendo Switch 2 – First-look trailer.mp4
+│
+├── shared/
+│   ├── css/
+│   │   ├── vars.css            # Variables CSS globales
+│   │   └── common.css          # Estilos comunes para todas las vistas
+│   └── js/
+│       └── javascript.js       # Lógica JS compartida para formularios y componentes
+│
+├── docs/
+│   └── README.md               # Documentación del proyecto
+```
+
+### Decisiones técnicas clave
+
+- **Separación de vistas:**  
+  Las páginas de contacto y configuración están en la carpeta `views` para mantener la estructura modular y facilitar la escalabilidad del proyecto.
+
+- **Carpeta `assets/img`:**  
+  Todos los archivos multimedia (imágenes, audio, video) se agrupan en una sola carpeta para un acceso centralizado y rutas consistentes, facilitando la gestión de recursos.
+
+- **Carpeta `shared`:**  
+  Los archivos CSS y JS compartidos se ubican en `shared` para evitar duplicidad de código y asegurar estilos y lógica coherentes en todas las vistas.
+
+- **Uso de Bootstrap:**  
+  Se utiliza Bootstrap para lograr un diseño responsivo y componentes visuales modernos (navbar, cards, toasts, etc.), acelerando el desarrollo y mejorando la experiencia de usuario.
+
+- **JavaScript modular:**  
+  Toda la lógica de formularios y componentes interactivos se centraliza en un solo archivo JS, facilitando el mantenimiento y la reutilización.
+
+- **Documentación:**  
+  El archivo `README.md` en la carpeta `docs` documenta la estructura, requisitos y decisiones del proyecto para facilitar su comprensión y futuras mejoras.
+
+---
 
 ## Requisitos técnicos
-
+  Todos los archivos multimedia (imágenes, audio, video) se agrupan en una sola carpeta para un acceso centralizado y rutas consistentes, facilitando la gestión de recursos.
 Para visualizar correctamente este proyecto, necesitarás:
-1. Un navegador web moderno que soporte HTML5, CSS3 y archivos multimedia.
-2. Un servidor local o software que permita abrir archivos HTML si deseas probar las funcionalidades en un entorno local.
+- **Carpeta `shared`:**  no que soporte HTML5, CSS3 y archivos multimedia.
+  Los archivos CSS y JS compartidos se ubican en `shared` para evitar duplicidad de código y asegurar estilos y lógica coherentes en todas las vistas.
 
-## Autor
-
+- **Uso de Bootstrap:**  
+  Se utiliza Bootstrap para lograr un diseño responsivo y componentes visuales modernos (navbar, cards, toasts, etc.), acelerando el desarrollo y mejorando la experiencia de usuario.
 Ramses, estudiante de ingeniería informática en la Universidad Católica Andrés Bello (UCAB).
+- **JavaScript modular:**  
+  Toda la lógica de formularios y componentes interactivos se centraliza en un solo archivo JS, facilitando el mantenimiento y la reutilización.
 
-## Licencia
-
-Este proyecto está bajo una licencia de uso personal. © 2025 Mi Revista Digital. Todos los derechos reservados.
+- **Documentación:**  o una licencia de uso personal. © 2025 Mi Revista Digital. Todos los derechos reservados.  El archivo `README.md` en la carpeta `docs` documenta la estructura, requisitos y decisiones del proyecto para facilitar su comprensión y futuras mejoras.---## Requisitos técnicosPara visualizar correctamente este proyecto, necesitarás:1. Un navegador web moderno que soporte HTML5, CSS3 y archivos multimedia.2. Un servidor local o software que permita abrir archivos HTML si deseas probar las funcionalidades en un entorno local.## AutorRamses, estudiante de ingeniería informática en la Universidad Católica Andrés Bello (UCAB).## LicenciaEste proyecto está bajo una licencia de uso personal. © 2025 Mi Revista Digital. Todos los derechos reservados.

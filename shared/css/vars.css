@@ -1,0 +1,9 @@
+/* =========================
+   Variables CSS
+   ========================= */
+:root {
+    --primary-background: linear-gradient(135deg, #2c3e50, #e01e1e);
+    --primary-font-size: large;
+    --primary-font-family: 'Times New Roman', Times, serif;
+    --secondary-color: white;
+}
