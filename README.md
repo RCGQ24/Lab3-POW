@@ -20,8 +20,3 @@ Este proyecto es una revista digital interactiva desarrollada como laboratorio a
 3. Usa una extensión como **Live Server** en VS Code o abre `index.html` directamente en tu navegador.
 4. Navega por las diferentes secciones usando el menú de navegación.
 5. Puedes probar los formularios de contacto y configuración; sus datos se enviarán a un servicio de prueba y se almacenarán en tu navegador.
-
----
-
-> **Nota:**  
-> Si existía información sobre propósito, tecnologías o ejecución en `docs/README.md`, elimínala de allí y mantenla solo en este archivo raíz.
